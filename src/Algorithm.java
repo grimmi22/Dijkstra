@@ -5,7 +5,7 @@ public class Algorithm {
 
     List map;
     int temporaryDistance;
-    boolean startPoint;
+    int startPoint;
     boolean destinationPoint;
 
 
@@ -14,6 +14,8 @@ public class Algorithm {
 
     public static void markAllAsUnvisited(boolean visited){
 
+        visited = false;
+
 
     }
 
@@ -21,14 +23,16 @@ public class Algorithm {
 
     public static void setAllInitialDiscance(int discanceFromStart){
 
+        discanceFromStart = 65535;
+
 
 
     }
 
 
-    public static void setStartpoint(boolean startPoint){
+    public static void setStartpoint(int startPoint){
 
-
+        startPoint = 0;
 
 
     }
@@ -36,14 +40,14 @@ public class Algorithm {
 
     public static void compareAndSetShortestWaypointActivated(boolean activated){
 
-
+        activated
 
     }
 
 
     public static void setVisited(boolean visited){
 
-
+        visited = true;
 
     }
 
