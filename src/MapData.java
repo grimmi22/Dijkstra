@@ -42,18 +42,24 @@ public class MapData {
             }
             }
 
-    }
+
 
 
 // Objekt erstellen von
 
-    public static void distanceToNeighbor(){
-public neighboararray(char startWaypointm, char toWaypaint, int distance)) {
-this.startWaypoint = startWaypointm;
-this.toWaypaint = toWaypaint;
-this.distance = distance;
+private char startWaypoint;
+private char toWaypaint;
+private int  distance;
+
+
+public neighboar(char startWaypoint, char toWaypaint, int distance) {
+        this.startWaypoint = startWaypoint;
+        this.toWaypaint = toWaypaint;
+        this.distance = distance;
 
         }
+
+public static void distanceToNeighbor(){
 
 
 
@@ -61,12 +67,3 @@ this.distance = distance;
 }
 
 
-private char startWaypoint;
-private char toWaypaint;
-private int  distance;
-
-
-public neighborarray(char startWaypointm, char toWaypaint, int distance)) {
-
-
-        }
