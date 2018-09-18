@@ -1,6 +1,21 @@
 public class MapData {
 
 
+    private String startWaypoint;
+    private String toWaypoint;
+    private int distance;
+
+
+    public MapData(String startWaypoint, String toWaypoint, int distance) {
+        this.startWaypoint = startWaypoint;
+        this.toWaypoint = toWaypoint;
+        this.distance = distance;
+
+    }
+}
+
+
+/*
     public static void neighbors() {
 
         String[][] neigbhorsarray = new String[][];
@@ -43,27 +58,7 @@ public class MapData {
             }
 
 
-
+*/
 
 // Objekt erstellen von
-
-private char startWaypoint;
-private char toWaypaint;
-private int  distance;
-
-
-public neighboar(char startWaypoint, char toWaypaint, int distance) {
-        this.startWaypoint = startWaypoint;
-        this.toWaypaint = toWaypaint;
-        this.distance = distance;
-
-        }
-
-public static void distanceToNeighbor(){
-
-
-
-    }
-}
-
 
