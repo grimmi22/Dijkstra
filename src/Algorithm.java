@@ -23,7 +23,7 @@ public class Algorithm {
 
     public static void setAllInitialDiscance(int discanceFromStart){
 
-        discanceFromStart = 65535;
+        discanceFromStart = Integer.MAX_VALUE;
 
 
 
@@ -40,7 +40,7 @@ public class Algorithm {
 
     public static void compareAndSetShortestWaypointActivated(boolean activated){
 
-        activated
+        activated =
 
     }
 
