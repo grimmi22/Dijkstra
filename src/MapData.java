@@ -44,10 +44,28 @@ public class MapData {
     }
 
 
-    public static void distanceToNeighbor(){
+// Objekt erstellen von
 
+    public static void distanceToNeighbor(){
+public neighboararray(char startWaypointm, char toWaypaint, int distance)) {
+this.startWaypoint = startWaypointm;
+this.toWaypaint = toWaypaint;
+this.distance = distance;
+
+        }
 
 
 
     }
 }
+
+
+private char startWaypoint;
+private char toWaypaint;
+private int  distance;
+
+
+public neighborarray(char startWaypointm, char toWaypaint, int distance)) {
+
+
+        }

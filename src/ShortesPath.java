@@ -1,4 +1,4 @@
-public class ShortesPath {
+public class    ShortesPath {
 
     String path;
     int pathLength;
