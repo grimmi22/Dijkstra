@@ -9,12 +9,16 @@ public class Algorithm {
     boolean destinationPoint;
 
 
+    public static void makeWaypoint(){
+
+
+    }
 
 
 
     public static void markAllAsUnvisited(boolean visited){
 
-        visited = false;
+
 
 
     }
@@ -23,7 +27,7 @@ public class Algorithm {
 
     public static void setAllInitialDiscance(int discanceFromStart){
 
-        discanceFromStart = Integer.MAX_VALUE;
+
 
 
 
@@ -40,7 +44,7 @@ public class Algorithm {
 
     public static void compareAndSetShortestWaypointActivated(boolean activated){
 
-        activated =
+        activated = true;
 
     }
 
