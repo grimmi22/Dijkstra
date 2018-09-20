@@ -12,29 +12,7 @@ public class Algorithm {
     private int numbWaypoints;
 
 
-public Algorithm(MapData[] mapData){
-    this.mapData = mapData;
-    this.numbWaypoints = numberOfWaypoints();
 
-
-}
-
-
-
-
-
-
-
-
-    public static void numberOfWaypoints(MapData[] mapDatas){
-        int numbWaypoints = 0;
-
-        for (MapData w : mapDatas) {
-            if (w.getToWaypoint() > numbWaypoints)
-        }
-
-
-    }
 
     public static void markAllAsUnvisited(boolean visited){
 

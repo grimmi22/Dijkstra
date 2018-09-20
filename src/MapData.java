@@ -26,5 +26,19 @@ public class MapData {
 
     }
 
+
+
+    public String getNeighbour(String nodeIndex) {
+        if (this.startWaypoint == nodeIndex) {
+            return this.startWaypoint;
+        }
+        else {
+            return this.toWaypoint;
+
+
+            }
+        }
+    }
+
 }
 
