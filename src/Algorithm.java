@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.util.Map;
 
 public class Algorithm {
 
@@ -7,10 +8,33 @@ public class Algorithm {
     int temporaryDistance;
     int startPoint;
     boolean destinationPoint;
+    private MapData[] mapData;
+    private int numbWaypoints;
+
+
+public Algorithm(MapData[] mapData){
+    this.mapData = mapData;
+    this.numbWaypoints = numberOfWaypoints();
+
+
+}
 
 
 
 
+
+
+
+
+    public static void numberOfWaypoints(MapData[] mapDatas){
+        int numbWaypoints = 0;
+
+        for (MapData w : mapDatas) {
+            if (w.getToWaypoint() > numbWaypoints)
+        }
+
+
+    }
 
     public static void markAllAsUnvisited(boolean visited){
 
@@ -40,7 +64,7 @@ public class Algorithm {
 
     public static void compareAndSetShortestWaypointActivated(boolean activated){
 
-        activated =
+        activated = false;
 
     }
 
