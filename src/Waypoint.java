@@ -10,24 +10,17 @@ public class Waypoint implements Node {
     int distanceFromStart;
     private boolean visited;
 
-
-
-    ArrayList<MapData> mapdata = new ArrayList<MapData>();
-
-
-    public int getDistanceFromStart(){
-        return distanceFromStart;
+    public Waypoint(String name) {
+        this.name = name;
+        this.activated = false;
+        this.distanceFromStart = Integer.MAX_VALUE;
+        this.visited = false;
     }
 
-    public void setDistanceFromStart(int distanceFromStart){
-        this.distanceFromStart = distanceFromStart;
-    }
 
 
     @Override
     public String getName() {
-
-
         return null;
     }
 
@@ -51,8 +44,9 @@ public class Waypoint implements Node {
 
     }
 
-    public void setVisited(boolean visited) {
-        this.visited = visited;
+    @Override
+    public void setVisited(boolean value) {
+
     }
 
     @Override
@@ -74,15 +68,4 @@ public class Waypoint implements Node {
     public void addNeighbour(Node node) {
 
     }
-
-
-    public ArrayList<MapData> getMapdata() {
-        return mapdata;
-    }
-
-    public void setMapdata(ArrayList<MapData> mapdata) {
-        this.mapdata = mapdata;
-    }
-
-
 }

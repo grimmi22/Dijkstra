@@ -8,7 +8,6 @@ public class Algorithm {
     int temporaryDistance;
     int startPoint;
     boolean destinationPoint;
-    private MapData[] mapData;
     private int numbWaypoints;
 
 
@@ -21,15 +20,6 @@ public class Algorithm {
 
     }
 
-
-
-    public static void setAllInitialDiscance(int discanceFromStart){
-
-        discanceFromStart = Integer.MAX_VALUE;
-
-
-
-    }
 
 
     public static void setStartpoint(int startPoint){

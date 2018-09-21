@@ -46,7 +46,7 @@ public class Network {
         if (node != null) {
             return node;
         } else {
-            node = new Node(name);
+            node = new Waypoint(name);
             nodes.add(node);
             return node;              // else: create new node with given name
         }
