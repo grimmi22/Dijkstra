@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 
@@ -9,6 +10,8 @@ public class Waypoint implements Node {
     boolean activated;
     int distanceFromStart;
     private boolean visited;
+    private Node predecessor;
+    private List<Node> neighbours = new LinkedList<>();
 
     public Waypoint(String name) {
         this.name = name;
@@ -21,51 +24,56 @@ public class Waypoint implements Node {
 
     @Override
     public String getName() {
-        return null;
+        return name;
     }
 
     @Override
     public Node getPredecessor() {
-        return null;
+        return predecessor;
     }
 
     @Override
     public void setPredecessor(Node node) {
+        if(node != null) {
+            predecessor = node;
+        }
 
     }
 
     @Override
     public int getCurrentDistance() {
-        return 0;
-    }
-
-    @Override
-    public void setAsUnvisited() {
-
-    }
-
-    @Override
-    public void setVisited(boolean value) {
-
+        return distanceFromStart;
     }
 
     @Override
     public void setCurrentDistance(int distance) {
+        distanceFromStart = distance;
+    }
 
+
+    @Override
+    public void setAsUnvisited() {
+        visited = false;
     }
 
     @Override
+    public void setVisited(boolean value) {
+        visited = true;
+    }
+
+
+    @Override
     public List<Node> getNeighbours() {
-        return null;
+        return neighbours;
     }
 
     @Override
     public boolean isVisited() {
-        return false;
+        return visited;
     }
 
     @Override
     public void addNeighbour(Node node) {
-
+        neighbours.add(node);
     }
 }

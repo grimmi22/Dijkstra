@@ -5,20 +5,17 @@ public class Algorithm {
 
 
     List map;
-    int temporaryDistance;
     int startPoint;
     boolean destinationPoint;
     private int numbWaypoints;
+    private Network network;
 
 
 
 
-    public static void markAllAsUnvisited(boolean visited){
-
-        visited = false;
 
 
-    }
+
 
 
 
@@ -30,18 +27,14 @@ public class Algorithm {
     }
 
 
-    public static void compareAndSetShortestWaypointActivated(boolean activated){
+    public static void compareAndSetShortestWaypointActivated(Node node){
 
-        activated = false;
-
-    }
-
-
-    public static void setVisited(boolean visited){
-
-        visited = true;
+      //  Integer
 
     }
+
+
+
 
     public static void ifShortestToDestinyStop(){
 
